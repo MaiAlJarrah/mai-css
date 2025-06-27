@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مثال على align-content</title>
+    <style>
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            height: 200px;
+            align-content: center; /* يمكنك استخدام flex-start أو flex-end */
+            border: 2px solid #000;
+        }
+        .item {
+            background-color: #4CAF50;
+            padding: 200px;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">صف 1</div>
+        <div class="item">صف 1</div>
+        <div class="item">صف 2</div>
+        <div class="item">صف 2</div>
+    </div>
+</body>
+</html>
