@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one,.two,.three{
+            display: inline-block;
+            border: 2px solid black;
+            width: 300px;
+            height: 600px;
+            vertical-align: top;
+            
+        }
+        .two{
+            position: relative;
+        }
+        img{
+            width: 300px;
+            height: 260px;
+        }
+        .footer1{
+            
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            display: flex;
+            align-items: center;
+        }
+        .three{
+            position: relative;
+        }
+        .footer2{
+            position: absolute;
+            background-color: black;
+            color: white;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            height: 35px;
+            display: flex;
+            align-items: center;
+
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>A short heading</h1>
+        <img src="./OIP.webp" alt="">
+        <p>The idea of reaching the north pole by means of ballons appears to have been enterained many years ago.</p>
+
+    </div>
+    <div class="two">
+        <h1>A short heading</h1>
+        <img src="./OIP.webp" alt="">
+        <p>Short content.</p>
+        <footer class="footer1">I have a footer!</footer> 
+    </div>
+    <div class="three">
+        <h1>A longer heading in this card</h1>
+        <img src="./OIP.webp" alt="">
+        <p>In a curious work.</p>
+        
+        <p>puplished in Paris in 1863 by Delaville Dedreux,there is a suggestion for reaching the North Pole by an aerostat.</p>
+        <footer class="footer2">I have a footer!</footer>
+
+    </div>
+</body>
+</html>
