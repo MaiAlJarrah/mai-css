@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .part{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100vh;
+        }
+        .part1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blue;
+            font-size: 100px;
+            text-align: center;
+           
+        }
+        .part2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: pink;
+            font-size: 100px;
+            text-align: center;
+
+        }
+        @media (max-width:900px){
+            .part1{
+                background-color: blueviolet;
+                color:white;
+                font-size: 50px;
+            }
+            .part2{
+                background-color: aqua;
+                color: white;
+                font-size: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="part">
+    <div class="part1">part 1</div>
+    <div class="part2">part 2</div>
+</div>
+</body>
+</html>
