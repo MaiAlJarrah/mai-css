@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="one">
+        <label>
+            <select id="family">
+                <option>Times New Roman</option>
+                <option>Arial</option>
+                <option>Courier New</option>
+            </select>
+        </label>
+        <label>
+            <select id="size">
+                <option>10px</option>
+                <option>20px</option>
+                <option>30px</option>
+            </select>
+        </label>
+
+        <input id="italic" type="checkbox">
+        <label >Italic</label>
+        <input id="bold" type="checkbox">
+        <label >Bold</label>
+        <input  id="underline" type="checkbox">
+        <label>Underline</label>
+
+    </div>
+    <br>
+    <textarea id="textarea" placeholder="write here" cols="50" rows="10"></textarea>
+    <script>
+        let textarea = document.getElementById("textarea")
+
+        document.getElementById("family").onchange=function(){
+            textarea.style.fontFamily =this.value;
+        }
+        document.getElementById("size").onchange=function(){
+            textarea.style.fontSize =this.value;
+        }
+        document.getElementById("italic").onclick=function(){
+            if(textarea.style.fontStyle=== "italic"){
+                textarea.style.fontStyle="normal"
+            }
+            else{
+                textarea.style.fontStyle ="italic"
+            }
+        }
+        document.getElementById("bold").onclick=function(){
+            if(textarea.style.fontWeight==="bold"){
+                textarea.style.fontWeight="normal"
+            }
+            else{
+                textarea.style.fontWeight="bold"
+            }
+        }
+        document.getElementById("underline").onclick=function(){
+            if(textarea.style.textDecoration==="underline"){
+                textarea.style.textDecoration="none"
+            }
+            else{
+                textarea.style.textDecoration="underline"
+            }
+            
+        }
+        
+         
+
+    </script>
+</body>
+</html>

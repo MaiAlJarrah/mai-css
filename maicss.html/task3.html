@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box1 {
+            width: 300px;
+            height: 100px;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box1">Hello World!</div>
+
+    <script>
+        let x = document.getElementById("box1");
+
+        x.onmouseenter = function() {
+            x.style.background = "orange";
+            x.textContent = "Can I Help You?";
+        }
+        x.onmouseleave = function() {
+            x.style.background = "blue";
+            x.textContent = "Hello World!";
+        }
+    </script>
+
+</body>
+</html>
